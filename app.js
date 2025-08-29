@@ -21,4 +21,9 @@ app.use('/api/v1/message', messageRouter);
 
 dbConnection();
 
+// Default route for root URL
+app.get('/', (req, res) => {
+    res.send('Hello farhan');
+});
+
 export default app;
